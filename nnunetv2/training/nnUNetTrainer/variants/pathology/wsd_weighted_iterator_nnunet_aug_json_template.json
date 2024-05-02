@@ -35,6 +35,13 @@
                 {
                     "*object": "wholeslidedata.samplers.callbacks.DeepSupervisionBatchCallback",
                         "sizes": []
+                },
+                {
+                    "*object": "wholeslidedata.samplers.callbacks.HedAugmentationBatchCallback",
+                    "hem": 0.05,
+                    "eos": 0.05,
+                    "dab": 0.05,
+                    "probability": 1
                 }
             ]
         }
