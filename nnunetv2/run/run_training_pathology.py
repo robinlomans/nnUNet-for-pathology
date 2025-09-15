@@ -390,10 +390,10 @@ if __name__ == "__main__":
         help="Trainer name, check nnunetv2/training/nnUNetTrainer/variants/pathology for trainers",
     )
     parser.add_argument(
-        "pretrained_weights",
+        "--pretrained_weights",
         type=str,
-        help="Path to pretrained weights",
-        required=False,
+        default=None,
+        help="Path to pretrained weights (optional)",
     )
     parser.add_argument(
         "--planner",
